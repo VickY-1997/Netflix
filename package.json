@@ -1,0 +1,27 @@
+{
+  "name": "netflix-app",
+  "version": "1.0.0",
+  "main": "backEnd/server.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon backEnd/server.js",
+    "start": "cross-env NODE_ENV=production node backEnd/server.js",
+    "build": "npm install && npm install --prefix frontEnd && npm run build --prefix frontEnd"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.7.0",
+    "nodemon": "^3.1.7"
+  }
+}
